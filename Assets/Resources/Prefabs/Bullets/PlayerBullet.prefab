@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  movingDistance: 15
+  movingDistance: 8
   direction: {x: 0, y: 0}
 --- !u!61 &6655743359921816815
 BoxCollider2D:

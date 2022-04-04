@@ -10,6 +10,10 @@ public class Bullet : MonoBehaviour
     public Vector2 direction;
     Vector2 startingDist;
     void Start(){
+        startingDist = this.transform.position;
+    }
+    public void StartDist() {
+        startingDist = this.transform.position;
     }
     void Update(){
         if(direction == Vector2.zero)return;

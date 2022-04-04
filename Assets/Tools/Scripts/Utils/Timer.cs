@@ -12,6 +12,9 @@ public class Timer {
     public bool complete {
         get { return elapsed >= setTime; }
     }
+    public float reverseElaped{
+        get {return setTime - elapsed; }
+    }
 
     public Timer(float _set, bool looping = false) {
         setTime = _set;

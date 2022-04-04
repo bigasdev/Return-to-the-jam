@@ -29,8 +29,12 @@ public class CameraManager : MonoBehaviour
     Coroutine shakeRoutine, zoomRoutine;
     private void Start() {
         this.transform.parent = null;
+        this.transform.position = TagQuery.FindObject("Jelly").transform.position;
         obj = TagQuery.FindObject("Jelly").transform;
         originalSize = mainCamera.orthographicSize;
+    }
+    private void FixedUpdate() {
+        if(obj != null)this.transform.position = Vector2.MoveTowards(this.transform.position, obj.position, damping * Time.deltaTime);
     }
     public void OnCameraShake(float duration, float magnitude) {
         if (shakeRoutine != null) {
