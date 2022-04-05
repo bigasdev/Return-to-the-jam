@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36233169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -12.58, y: -3.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 267072752}
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectId: ExperiencePool
   objectPrefab: {fileID: 7166864656297069225, guid: c93350e06bd5c3246a806c83b7ff3c8f, type: 3}
-  maxPlayerCapacity: 35
+  maxPlayerCapacity: 50
 --- !u!1 &267072749
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +344,181 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &368603041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 368603042}
+  - component: {fileID: 368603043}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &368603042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368603041}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 476105987}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &368603043
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368603041}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f92ab4a793faa564b9b37cd6a178db1a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 0.9
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &476105985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476105987}
+  - component: {fileID: 476105986}
+  m_Layer: 0
+  m_Name: AudioController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &476105986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476105985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d37edd94f14db47b3443e500c57960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxSource: {fileID: 1770447338}
+  musicSource: {fileID: 368603043}
+  ambientSource: {fileID: 368603043}
+--- !u!4 &476105987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476105985}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1770447337}
+  - {fileID: 368603042}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &482218831
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectId: BloodPool
   objectPrefab: {fileID: 3559436957191963721, guid: 9ba1b774466bfc0438bfb908a2a96745, type: 3}
-  maxPlayerCapacity: 10
+  maxPlayerCapacity: 40
 --- !u!1 &641630128
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +687,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3029051688871890824, guid: b0bb9946c64d07648be4ea2a351ca8f7, type: 3}
+      propertyPath: shurikenCd
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029051688871890824, guid: b0bb9946c64d07648be4ea2a351ca8f7, type: 3}
+      propertyPath: jellyDecreaseFromMove
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029051688871890824, guid: b0bb9946c64d07648be4ea2a351ca8f7, type: 3}
+      propertyPath: jellyDecreaseFromAttack
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3029051688871890826, guid: b0bb9946c64d07648be4ea2a351ca8f7, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -559,6 +746,14 @@ PrefabInstance:
     - target: {fileID: 3029051688871890827, guid: b0bb9946c64d07648be4ea2a351ca8f7, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040941569218159809, guid: b0bb9946c64d07648be4ea2a351ca8f7, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993500710184025491, guid: b0bb9946c64d07648be4ea2a351ca8f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0bb9946c64d07648be4ea2a351ca8f7, type: 3}
@@ -697,7 +892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectId: MiniJamPool
   objectPrefab: {fileID: 3563646963327198637, guid: 69215bebab18e5345a96ed230d424942, type: 3}
-  maxPlayerCapacity: 20
+  maxPlayerCapacity: 50
 --- !u!1001 &1704005445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -835,6 +1030,133 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -5765183769023986340, guid: 22b505ed5f019ca41953135c7e27a483, type: 3}
+--- !u!1 &1770447336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1770447337}
+  - component: {fileID: 1770447338}
+  m_Layer: 0
+  m_Name: SFx
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1770447337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770447336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 476105987}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1770447338
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770447336}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.8
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1785043519 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3029051688871890826, guid: b0bb9946c64d07648be4ea2a351ca8f7, type: 3}
@@ -930,42 +1252,86 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - hp: 3
-    moveSpeed: 2.5
+  - hp: 5
+    moveSpeed: 1.5
     lowExp: {fileID: -7807029353960199266, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
     medExp: {fileID: -5943414095311554128, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
     highExp: {fileID: 6339537897658903704, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
-    experienceAmount: 3
+    experienceAmount: 8
     points: 5
+    damage: 1
     pool: MiniJam
     color: {r: 0.16470589, g: 0.40000004, b: 0.29803923, a: 1}
-  - hp: 2
-    moveSpeed: 4
+  - hp: 3
+    moveSpeed: 2.5
     lowExp: {fileID: -8848170806871325500, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
     medExp: {fileID: -295669686455357, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
     highExp: {fileID: -4342563992235707840, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
-    experienceAmount: 2
+    experienceAmount: 7
     points: 4
+    damage: 1
     pool: MiniJam
     color: {r: 0.16470589, g: 0.40000004, b: 0.3803922, a: 1}
   - hp: 1
-    moveSpeed: 5
+    moveSpeed: 3
     lowExp: {fileID: -2494327548315423440, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
     medExp: {fileID: 1633725668507450812, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
     highExp: {fileID: 5960748365106485931, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
-    experienceAmount: 1
+    experienceAmount: 5
     points: 3
+    damage: 1
     pool: MiniJam
     color: {r: 0.8745099, g: 0.45098042, b: 0.38431376, a: 1}
-  - hp: 5
-    moveSpeed: 2
+  - hp: 7
+    moveSpeed: 1
     lowExp: {fileID: -2005663879992389465, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
     medExp: {fileID: -2067247240645133592, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
     highExp: {fileID: -7538458025915416368, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
-    experienceAmount: 6
+    experienceAmount: 10
     points: 6
+    damage: 1
     pool: MiniJam
     color: {r: 0.81568635, g: 0.69411767, b: 0.35686275, a: 1}
+  - hp: 10
+    moveSpeed: 0.5
+    lowExp: {fileID: -2894042177160783408, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    medExp: {fileID: 9004566610182239898, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    highExp: {fileID: 6860602738412211229, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    experienceAmount: 2
+    points: 6
+    damage: 1
+    pool: MiniJam
+    color: {r: 0.81568635, g: 0.69411767, b: 0.35686275, a: 1}
+  - hp: 6
+    moveSpeed: 2
+    lowExp: {fileID: 4780504417574854057, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    medExp: {fileID: 1767888529948487758, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    highExp: {fileID: -1207771486683323118, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    experienceAmount: 8
+    points: 6
+    damage: 1
+    pool: MiniJam
+    color: {r: 0.51838946, g: 0.16509432, b: 1, a: 1}
+  - hp: 3
+    moveSpeed: 2.2
+    lowExp: {fileID: -5124558633949361763, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    medExp: {fileID: 2944340971922999367, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    highExp: {fileID: -7085194615006804414, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    experienceAmount: 5
+    points: 20
+    damage: 1
+    pool: MiniJam
+    color: {r: 0.8745098, g: 0.4509804, b: 0.38431373, a: 1}
+  - hp: 12
+    moveSpeed: 1
+    lowExp: {fileID: 8241695465758238088, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    medExp: {fileID: -9066182060675134320, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    highExp: {fileID: 1094186347771661629, guid: 746d8d9cc6f60394a8dc121149917c92, type: 3}
+    experienceAmount: 5
+    points: 25
+    damage: 1
+    pool: MiniJam
+    color: {r: 0.5176471, g: 0.16470589, b: 1, a: 1}
 --- !u!1 &2096377757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,7 +1377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectId: EntityPool
   objectPrefab: {fileID: 6501391630645195040, guid: 697b362851e0179498db21bd24fdd938, type: 3}
-  maxPlayerCapacity: 40
+  maxPlayerCapacity: 60
 --- !u!1001 &3859702668965107282
 PrefabInstance:
   m_ObjectHideFlags: 0

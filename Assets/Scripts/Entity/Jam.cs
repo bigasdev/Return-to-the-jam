@@ -8,7 +8,10 @@ public class Jam : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         var p = other.GetComponent<Player>();
         if(p == null)return;
-        TagQuery.FindObject("Jelly").GetComponent<Player>().jellyEnergy += jamAmount;
+        AudioController.Instance.PlaySound("jellyPickup");
+        if(TagQuery.FindObject("Jelly").GetComponent<Player>().jellyEnergy <= 1000){
+            TagQuery.FindObject("Jelly").GetComponent<Player>().jellyEnergy += jamAmount + TagQuery.FindObject("Jelly").GetComponent<Player>().jamBonus;
+        }
         PoolsManager.Instance.GetPool("MiniJamPool").AddToPool(this.gameObject);
     }
 }

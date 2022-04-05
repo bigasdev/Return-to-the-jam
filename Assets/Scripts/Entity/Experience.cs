@@ -17,6 +17,7 @@ public class Experience : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         var p = other.GetComponent<Player>();
         if(p == null)return;
+        Engine.experienceGained++;
         p.jellyExperience++;
         PoolsManager.Instance.GetPool("ExperiencePool").AddToPool(this.gameObject);
     }
